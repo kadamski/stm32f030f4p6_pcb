@@ -1,4 +1,4 @@
-update=pon, 9 lis 2015, 22:17:52
+update=Thu 12 Nov 2015 00:13:43 CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,4 +59,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=stm32
-LibName31=stm32f030f4
+LibName31=LIB/stm32f030f4
