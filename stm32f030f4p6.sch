@@ -418,8 +418,6 @@ Wire Wire Line
 Wire Wire Line
 	1650 2500 1650 3000
 Wire Wire Line
-	850  2500 1800 2500
-Wire Wire Line
 	2200 2800 2400 2800
 Wire Wire Line
 	2400 2800 2400 2500
@@ -440,8 +438,6 @@ Wire Wire Line
 	1000 3500 1250 3500
 Wire Wire Line
 	1250 3500 1250 3050
-Wire Wire Line
-	850  2500 850  750 
 Wire Wire Line
 	850  750  9400 750 
 Wire Wire Line
@@ -518,7 +514,7 @@ Wire Wire Line
 Wire Wire Line
 	2900 2350 3100 2350
 Wire Wire Line
-	3100 2350 3100 2500
+	3100 2250 3100 2500
 Connection ~ 3100 2500
 Wire Wire Line
 	3100 2500 2400 2500
@@ -674,4 +670,47 @@ $EndComp
 Wire Wire Line
 	10500 2450 10500 2300
 Connection ~ 10500 2300
+$Comp
+L C C2
+U 1 1 56451A9B
+P 10000 3400
+F 0 "C2" H 10025 3500 50  0000 L CNN
+F 1 "10uF" H 10025 3300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 10038 3250 30  0001 C CNN
+F 3 "" H 10000 3400 60  0000 C CNN
+	1    10000 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 3250 10000 3150
+Connection ~ 10000 3150
+Wire Wire Line
+	10000 3550 9650 3550
+Connection ~ 9650 3550
+Wire Wire Line
+	1800 2500 1650 2500
+Wire Wire Line
+	3100 2250 850  2250
+Connection ~ 3100 2350
+Wire Wire Line
+	850  2250 850  750 
+Text GLabel 5150 5900 3    60   Input ~ 0
+VSS
+Text GLabel 5150 5250 1    60   Input ~ 0
+VDD
+$Comp
+L C C3
+U 1 1 56466463
+P 5150 5550
+F 0 "C3" H 5175 5650 50  0000 L CNN
+F 1 "C" H 5175 5450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5188 5400 30  0001 C CNN
+F 3 "" H 5150 5550 60  0000 C CNN
+	1    5150 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 5250 5150 5400
+Wire Wire Line
+	5150 5700 5150 5900
 $EndSCHEMATC
